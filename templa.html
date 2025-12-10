@@ -1,125 +1,128 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog-Z</title>
     <link rel="stylesheet" href="temo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container header-inner">
-            <div class="logo">
-                <span class="icon">🎞️</span>
-                <span>Catalog-Z</span>
-            </div>
-
-            <nav class="nav">
-                <a href="#">Photos</a>
-                <a href="#">Videos</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
+    <!-- Navbar -->
+    <header class="top-nav">
+        <div class="logo">
+            <span class="icon">📽️</span> Catalog-Z
         </div>
+        <nav>
+            <a href="#" class="active">Photos</a>
+            <a href="#">Videos</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <!-- HERO BANNER -->
+    <!-- Hero Section -->
     <section class="hero">
-        <img src="laylak.png" alt="Banner" class="hero-img">
-
         <div class="search-box">
             <input type="text" placeholder="Search">
             <button>🔍</button>
         </div>
     </section>
 
-    <!-- LATEST PHOTOS -->
+    <!-- Latest Section -->
     <section class="latest">
-        <div class="container">
-            <div class="latest-top">
-                <h2>Latest Photos</h2>
+        <h2>Latest Photos</h2>
+        <div class="page-info">Page <span>1</span> of 200</div>
+    </section>
 
-                <div class="page-box">
-                    Page <input type="text" value="1"> of 200
-                </div>
-            </div>
-
-            <!-- GRID -->
-            <div class="grid">
-                <!-- ITEM 1 -->
-                <div class="item">
-                    <img src="soat.png">
-                    <div class="meta">
-                        <span>18 Oct 2020</span>
-                        <span>9,906 views</span>
-                    </div>
-                </div>
-
-                <!-- ITEM 2 -->
-                <div class="item">
-                    <img src="flower.png">
-                    <div class="meta">
-                        <span>14 Oct 2020</span>
-                        <span>16,100 views</span>
-                    </div>
-                </div>
-
-                <!-- ITEM 3 -->
-                <div class="item">
-                    <img src="maysa.png">
-                    <div class="meta">
-                        <span>12 Oct 2020</span>
-                        <span>12,460 views</span>
-                    </div>
-                </div>
-
-                <!-- ITEM 4 -->
-                <div class="item">
-                    <img src="airpods.png">
-                    <div class="meta">
-                        <span>10 Oct 2020</span>
-                        <span>11,402 views</span>
-                    </div>
-                </div>
-
-                <!-- Qo'shimcha -->
-                <div class="item">
-                    <img src="images/photo5.jpg">
-                    <div class="meta">
-                        <span>...</span>
-                        <span>...</span>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="images/photo6.jpg">
-                    <div class="meta">
-                        <span>...</span>
-                        <span>...</span>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="images/photo7.jpg">
-                    <div class="meta">
-                        <span>...</span>
-                        <span>...</span>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="images/photo8.jpg">
-                    <div class="meta">
-                        <span>...</span>
-                        <span>...</span>
-                    </div>
-                </div>
-
-            </div>
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="card">
+            <img src="img-03.jpg" alt="">
+            <div class="meta">18 Oct 2020 <span>9,906 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-04.jpg" alt="">
+            <div class="meta">14 Oct 2020 <span>16,100 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-05.jpg" alt="">
+            <div class="meta">12 Oct 2020 <span>12,460 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-06.jpg" alt="">
+            <div class="meta">10 Oct 2020 <span>11,402 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-07.jpg" alt="">
+            <div class="meta">08 Oct 2020 <span>10,321 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-08.jpg" alt="">
+            <div class="meta">05 Oct 2020 <span>9,874 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-09.jpg" alt="">
+            <div class="meta">02 Oct 2020 <span>8,900 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-10.jpg" alt="">
+            <div class="meta">01 Oct 2020 <span>7,650 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-11.jpg" alt="">
+            <div class="meta">28 Sep 2020 <span>6,500 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-12.jpg" alt="">
+            <div class="meta">25 Sep 2020 <span>5,900 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-13.jpg" alt="">
+            <div class="meta">20 Sep 2020 <span>5,200 views</span></div>
+        </div>
+        <div class="card">
+            <img src="img-14.jpg" alt="">
+            <div class="meta">18 Sep 2020 <span>4,800 views</span></div>
         </div>
     </section>
 
+    <!-- Pagination -->
+    <section class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>About Catalog-Z</h3>
+                <p>Catalog-Z is your go-to platform for the latest and greatest in photos and videos.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Email: info@catalog-z.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Catalog-Z. All Rights Reserved.
+        </div>
+    </footer>
 </body>
 </html>
